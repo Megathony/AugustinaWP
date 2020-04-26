@@ -1,0 +1,41 @@
+.content-info {
+  position: relative;
+  background-color: #000;
+  height: 200px;
+
+  .name {
+    position: relative;
+    top: 20px;
+    width: 100%;
+
+    a {
+      color: white;
+      font-size: 30px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .link {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% / 3);
+    left: calc(100% / 3);
+    top: calc(50% + 30px);
+    transform: translateY(-50%);
+
+    .tab {
+      display: block;
+      width: calc(100% / 3);
+
+      a {
+        position: relative;
+        color: #fff;
+        font-size: 20px;
+        left: calc(50% - 32px);
+      }
+    }
+  }
+}

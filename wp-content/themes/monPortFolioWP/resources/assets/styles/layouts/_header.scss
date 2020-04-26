@@ -1,0 +1,162 @@
+header {
+  position: relative;
+  z-index: 1;
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    max-width: 1920px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .fond {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .blue {
+      top: 0;
+      width: 100%;
+      position: absolute;
+
+      .icon {
+        position: absolute;
+        top: 45vh;
+        left: 50vw;
+        width: 600px;
+        height: 600px;
+        transform: translateX(-50%) translateY(-50%);
+        transition-duration: 0.7s;
+
+        &:hover {
+          width: 800px;
+          height: 800px;
+          transition-duration: 0.7s;
+        }
+      }
+
+      .anglehg {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: translateX(-50%) translateY(-50%);
+        left: 0;
+        top: 0;
+        transition-duration: 0.7s;
+
+        &:hover {
+          width: 600px;
+          height: 600px;
+          transition-duration: 0.7s;
+        }
+      }
+
+      .anglehd {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: translateX(-50%) translateY(-50%);
+        left: 100%;
+        top: 0;
+        transition-duration: 0.7s;
+
+        &:hover {
+          width: 600px;
+          height: 600px;
+          transition-duration: 0.7s;
+        }
+      }
+
+      .anglebg {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: translateX(-50%) translateY(-50%);
+        left: 0;
+        top: 90vh;
+        transition-duration: 0.7s;
+
+        &:hover {
+          width: 600px;
+          height: 600px;
+          transition-duration: 0.7s;
+        }
+      }
+
+      .anglebd {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: translateX(-50%) translateY(-50%);
+        left: 100%;
+        top: 90vh;
+        transition-duration: 0.7s;
+
+        &:hover {
+          width: 600px;
+          height: 600px;
+          transition-duration: 0.7s;
+        }
+      }
+    }
+
+    .brand {
+      position: absolute;
+      text-align: center;
+      margin-left: 50%;
+      margin-top: -45vh;
+      transform: translateX(-50%) translateY(-50%);
+      transition-duration: 0.7s;
+      font-size: 100px;
+      width: 500px;
+      color: #fff;
+
+      &:hover {
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        transition-duration: 0.7s;
+        font-size: 105px;
+      }
+    }
+  }
+
+  .nav-primary {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .nav-option {
+      cursor: pointer;
+      width: 20vw;
+      height: 10vh;
+      font-size: 30px;
+      font-family: sans-serif;
+      border-left: 1px solid #0871b8;
+      border-right: 1px solid #0871b8;
+      transition-duration: 0.7s;
+
+      p {
+        width: 20vw;
+        text-align: center;
+        padding-top: 2.5vh;
+      }
+
+      &:hover {
+        background-color: grey;
+        transition-duration: 0.7s;
+      }
+    }
+  }
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
